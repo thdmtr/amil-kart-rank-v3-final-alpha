@@ -31,7 +31,7 @@ public class DataLoaderUtil {
     public static List<CurrentInformationVO> load() {
         ArrayList<CurrentInformationVO> pilotInformationsList = new ArrayList<CurrentInformationVO>();
         try {
-            BufferedReader read = new BufferedReader(new FileReader("E:\\sample-data.csv"));
+            BufferedReader read = new BufferedReader(new FileReader(DataLoaderUtil.fullQualifiedPath));
             String line = null;
             int lineCursor = 0;
             
